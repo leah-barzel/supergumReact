@@ -3,9 +3,9 @@ import { observer } from "mobx-react";
 import { Button, TextField } from '@mui/material';
 
 import { addServices } from '../Store/server.js';
-import DataStore from '../../store/store.js';
 
-const AddService = observer(() =>{
+
+const AddService = (observer(() =>{
 const [name , setName] = useState('');
 
 const handleAddService = () => {
@@ -24,7 +24,7 @@ const handleAddService = () => {
        onClick={handleAddService}>Add service</button>
         </>
     )
-})
+}))
  
 export default AddService
 
